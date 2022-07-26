@@ -1,0 +1,9 @@
+#index:
+#    path: /
+#    controller: App\Controller\DefaultController::index
+login:
+  path: /account/login
+  controller: App\Controller\AccountController
+post_success:
+  path: /form/success
+  controller: App\Controller\PostSuccessController

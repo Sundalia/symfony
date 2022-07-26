@@ -1,0 +1,21 @@
+{% extends 'base.html.twig' %}
+{% block title %}Вход в систему!{% endblock %}
+{% block head %}
+    <link href="{{ asset('/styles/app.css') }}"
+{% endblock %}
+{% block body %}
+    <form method="post">
+        <h1>Авторизация</h1>
+        <span>Введите учётные данные или
+        <a href="/register">зарегистрируйтесь</a></a>
+        </span>
+        <br>
+        <span>email</span>
+        <input type = "text" name = "email" value = "введите email">
+        <br>
+        <span>пароль</span>
+        <input type="password" name="пароль">
+        <br>
+        <input type = "submit" name = "submit" value = "Отправить">
+    </form>
+{% endblock %}
